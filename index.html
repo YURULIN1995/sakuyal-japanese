@@ -1,24 +1,88 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://sakuyal.com/main.css">
-  </head>
-<body>
-  <header class="header">
-    <a href="https://sakuyal.com" class="logo">
-      <img width=90 height=90 src="https://1.gravatar.com/avatar/1f1e1e599a49517b9b3da95f1509066ff00a740b8c17dedcd38ac4b5714deeec?size=256">
-    </a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="#about-me">About me 關於我</a></li>
-      <li><a href="#service">Service 服務</a></li>
-      <li><a href="#portfolio">Portfolio 作品集</a></li>
-      <li><a href="#blog">Blog 部落格</a></li>
-      <li><a href="#contact-me">Contact me 聯絡我</a></li>
-    </ul>
-  </header>
-</body>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="main.css">
+        <title>Responsive Dropdown Menu</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <a href="#" class="logo">
+                    <img src="sakuyal_logo_transparent_113x90.svg" alt="logo" class="logo__img">
+                </a>
+                <label class="hamburger-menu" for="hblist">
+                    <input class="toggle" type="checkbox" id="hblist">
+                </label>
+                <nav class="nav-desktop">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">關於我</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">服務項目</a>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">作品集 &#x25BE;</a>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">作品 01</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">作品 02</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">作品 03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">文章</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">聯絡</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">關於我</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">服務項目</a>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">作品集 &#x25BE;</a>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">作品 01</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">作品 02</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">作品 03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">文章</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">聯絡</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="bicolor">
+            <div class="left"></div>
+            <div class="right"></div>
+        </section>
+    </body>
 </html>
