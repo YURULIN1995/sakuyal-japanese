@@ -250,19 +250,18 @@ body {
         background-color: transparent;
     }
 
-    .dropdown:hover .dropdown__list {
+    .dropdown__list {
         display: none;
     }
 
-    a.nav__link:focus ~ .dropdown__list {
+    a.nav__link:hover + .dropdown__list {
         display: block;
     }
 
     .dropdown__list {
-        position: relative;
+        position: initial;
         height: max-content;
         box-shadow: none;
-
     }
         
     .dropdown__item {
@@ -272,7 +271,7 @@ body {
     
     .dropdown__item:hover {
         color: rgba(4, 87, 19, 0.75);
-        background-color: rgba(241, 246, 233, 0.75);
+        background-color: transparent;
     }
 
 }
